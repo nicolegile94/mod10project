@@ -1,7 +1,7 @@
 const Employee = require('../lib/Employee.js');
 const Manager = require('../lib/Manager');
 
-test('creates a Manager obkect', () => {
+test('creates a Manager object', () => {
     const manager = new Manager();
 
     expect(manager.officeNumber).toEqual(expect.any(Number));
