@@ -26,7 +26,7 @@ const createTeam = team => {
         <ul>
             <li>ID: ${intern.getID()}</li>
             <li>Email: ${intern.getEmail()}</li>
-            <li>GitHub: ${intern.getSchool()}</li>
+            <li>School: ${intern.getSchool()}</li>
         </ul>
         `    
     };
