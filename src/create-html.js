@@ -16,7 +16,7 @@ const createTeam = team => {
     <ul>
         <li>ID: ${engineer.getID()}</li>
         <li>Email: ${engineer.getEmail()}</li>
-        <li>GitHub: ${engineer.getGitHub()}</li>
+        <li>GitHub: ${engineer.getGithub()}</li>
         </ul> 
     `};
 
@@ -34,7 +34,7 @@ const createTeam = team => {
     const html = [];
     
     html.push(team
-        .filter(employee => Employee.getRole() === "Manager")
+        .filter(employee => employee.getRole() === "Manager")
         .map(manager => createManager(manager))
     );
     html.push(team
