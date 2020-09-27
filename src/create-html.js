@@ -5,7 +5,7 @@ const createTeam = team => {
     <h2>Manager: ${manager.getName()}</h2>
     <ul>
         <li>ID: ${manager.getID()}</li>
-        <li>Email: ${manager.getEmail()}</li>
+        <li>Email: <a href="mailto:${manager.getEmail()}}">${manager.getEmail()}</a></li>
         <li>Office: ${manager.getofficeNumber()}</li>
     </ul>
     `};
@@ -15,8 +15,8 @@ const createTeam = team => {
     <h2>Engineer: ${engineer.getName()}</h2>
     <ul>
         <li>ID: ${engineer.getID()}</li>
-        <li>Email: ${engineer.getEmail()}</li>
-        <li>GitHub: ${engineer.getGithub()}</li>
+        <li>Email: <<a href="mailto:${engineer.getEmail()}}">${engineer.getEmail()}</a></li>
+        <li> GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank">${engineer.getGithub()}</a></li>
         </ul> 
     `};
 
@@ -25,7 +25,7 @@ const createTeam = team => {
         <h2>Intern: ${intern.getName()}</h2>
         <ul>
             <li>ID: ${intern.getID()}</li>
-            <li>Email: ${intern.getEmail()}</li>
+            <li>Email: <a href="mailto:${intern.getEmail()}}">${intern.getEmail()}</a></li>
             <li>School: ${intern.getSchool()}</li>
         </ul>
         `    
