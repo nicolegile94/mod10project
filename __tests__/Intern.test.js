@@ -2,19 +2,19 @@ const Employee = require('../lib/Employee.js');
 const Intern = require('../lib/Intern.js');
 
 test('creates new Intern object', () => {
-    const intern = new Intern();
+    const intern = new Intern('testName', 'testID', 'testEmail', 'testSchool', 'testRole');
 
-    expect(intern.school).toEqual(expect.any(String));
+    expect(intern.school).toBe('testSchool');
 });
 
 test("gets Intern's school", () => {
-    const intern = new Intern();
+    const intern = new Intern('testName', 'testID', 'testEmail', 'testSchool', 'testRole');
 
-    expect(intern.getSchool()).toHaveProperty('school');
+    expect(intern.getSchool()).toBe('testSchool');
 });
 
 test("gets Intern's role", () => {
-    const intern = new Intern();
+    const intern = new Intern('testName', 'testID', 'testEmail', 'testSchool', 'testRole');
 
-    expect(intern.getRole()).toHaveProperty('role');
+    expect(intern.getRole()).toBe('Intern');
 });
